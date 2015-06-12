@@ -1,0 +1,27 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+
+@charset "utf-8";
+//
+//// 配置间距
+//$setting-spacing: 5px;
+//$setting-weibo-spacing: 10px;
+//
+//// 配置位置
+//$setting-position: 5px;
+//$setting-weibo-position: 10px;
+
+// 配置sprite的布局方式
+$shoes-layout: horizontal;  // vertical/horizontal/diagonal/smart
+
+
+//
+//// 自动输出尺寸
+//$setting-sprite-dimensions: true;
+
+@import "compass/reset";
+@import "shoesall/*.png";
+@include all-shoesall-sprites;
